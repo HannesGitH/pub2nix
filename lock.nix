@@ -6,7 +6,7 @@
 #
 # We no longer patch the original lockfile because convenient YAML tooling
 # reformats things in ways that Dart tooling doesn't like.
-pkgs.writeScriptBin
+pkgs.writeShellScriptBin
   "pub2nix-lock"
   ''
     cp pubspec.lock pub2nix.lock
