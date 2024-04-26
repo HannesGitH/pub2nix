@@ -17,8 +17,8 @@
         fetch = pkgs.stdenv.mkDerivation {
           name = "pub2nix-fetch";
           src = self;
-          buildInputs = with pkgs; with python3Packages; [ python3 pyyaml ];
-          
+          buildInputs = with pkgs; with python3Packages; [ python3 pyyaml git wget ];
+
         };
           
         default = fetch;
